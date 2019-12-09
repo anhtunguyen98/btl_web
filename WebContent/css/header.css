@@ -1,0 +1,96 @@
+body{
+    width: 100%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    font-family: Arial;
+}
+#header-parent{
+    width: 100%;
+    height: 100px;
+
+}
+#header{
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    background: #000;
+    font-family: Arial;
+   
+   
+}
+#header #logo{
+    border: 1px solid black;
+    float: left;
+}
+#header #logo img{
+    margin: 5px;
+    width: 176px;
+    height: 62px;
+    
+}
+#header #menu_top{
+    display: block;
+}
+#header #menu_top ul{
+    margin: 0px;
+    padding: 0px;
+}
+#header #menu_top ul li{
+    
+    list-style: none;
+    float: left;
+}
+#header #menu_top ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+    height: 83px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    line-height: 83px;
+}
+#header #menu_top ul li a:hover{
+    color:orange;
+}
+#header #search-engine{
+    border: 1px solid green;
+    padding-left: 20px;
+}
+#header #search_form {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#header .dangnhap{
+    
+    text-decoration: none;
+    padding: 7px 15px;
+    float: left;
+     margin-top: 25px;
+    margin-left: 10px;
+    
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+#header .profile{
+    float:left;
+    margin-top: 28px;
+    padding-left: 25px;
+    
+}
+#header .profile img{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#header .cart{
+    float:left;
+    padding-left: 25px;
+}
+#header .cart img{
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+}

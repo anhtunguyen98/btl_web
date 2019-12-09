@@ -1,0 +1,259 @@
+body{
+    width: 100%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    font-family: Arial;
+}
+#header-parent{
+    width: 100%;
+    height: 100px;
+
+}
+#header{
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    background: #000;
+    font-family: Arial;
+   
+   
+}
+#header #logo{
+    border: 1px solid black;
+    float: left;
+}
+#header #logo img{
+    margin: 5px;
+    width: 176px;
+    height: 62px;
+    
+}
+#header #menu_top{
+    display: block;
+}
+#header #menu_top ul{
+    margin: 0px;
+    padding: 0px;
+}
+#header #menu_top ul li{
+    
+    list-style: none;
+    float: left;
+}
+#header #menu_top ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+    height: 83px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    line-height: 83px;
+}
+#header #menu_top ul li a:hover{
+    color:orange;
+}
+#header #search-engine{
+    border: 1px solid green;
+    padding-left: 20px;
+}
+#header #search_form {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#header .dangnhap{
+    
+    text-decoration: none;
+    padding: 7px 15px;
+    float: left;
+     margin-top: 25px;
+    margin-left: 10px;
+    
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+#header .profile{
+    float:left;
+    margin-top: 28px;
+    padding-left: 25px;
+    
+}
+#header .profile .img{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#header .cart{
+    float:left;
+   
+    padding-left: 25px;
+}
+#header .cart img{
+    padding-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+
+#content{
+    width: 1130px;
+    height: 650px;
+    margin-top: 30px;  
+    margin-left: 115px;
+}
+#left_content{
+    float: left;
+    width: 260px;
+    margin-top: 10px;
+    height: 550px;
+    padding: 15px;
+}
+.left_content1{
+    width: 260px;
+    border-bottom: solid 1px #4e4e4e;
+    height: 100px;
+}
+.left_content1 img{
+    float: left;
+    padding-left: 15px;
+}
+.left_content1 h3{
+    float: left;
+    padding: 15px;
+    color: #d12e2f;
+}
+.left_content2{
+    height: 450px;
+}
+.fix{
+    float: left;
+    width: 260px;
+    padding: 15px;
+}
+.fix img{
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.fix a{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 6px;
+    color: #4e4e4e;
+}
+.fix a:hover{
+    color: #d12e2f;
+}
+#right_content{
+    float: left;
+    width: 810px;
+    height: 600px;
+    padding: 15px;
+}
+
+.geted{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px
+}
+.geted p{
+    margin: 0px;
+    color: blue;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    border-bottom: 1px solid;
+    width: 75px;
+}
+
+.getedsale{
+    height: 150px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.getedsale1{
+    float: left;
+    height: 100%;
+    width: 400px;
+}
+
+.fixp{
+    color: #696763;
+    text-align: center;
+    font-size: 18px;
+}
+
+.p{
+    color: #d12e2f;
+    text-align: center;
+}
+
+.pp{
+    color: #4e4e4e;
+    text-align: center;
+    font-size: 18px;
+}
+
+.getedsale2{
+    float: left;
+    height: 71%;
+    width: 250px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin-top: 22px;
+}
+
+.getedsale3{
+    float: left;
+    width: 158px;
+    height: 150px;
+}
+
+.getedsale3 img{
+    height: 25px;
+    width: 25px;
+    padding-top: 40px;
+    padding-left: 65px;
+}
+.getedsale3 p{
+    text-align: center;
+    color: #696763;
+    margin-top: 13px;
+}
+
+#footer{
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 50px;
+    margin-right: 10%;
+}
+#footer #footer1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  
+    height: 70px;
+}
+#footer #footer1 img{
+    width: 100%;
+    height: 70px;
+}
+#footer #footer2{
+    background-color: #222222;
+    width: 100%;
+    height: 250px;
+}
+#footer #footer2 img{
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    height: 250px;
+}

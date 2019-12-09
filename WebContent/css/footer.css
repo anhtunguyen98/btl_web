@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    font-family: Arial;
+}
+#footer{
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    height: 50px;
+    margin-right: 10%;
+}
+#footer #footer1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+  
+    height: 70px;
+}
+#footer #footer1 img{
+    width: 100%;
+    height: 70px;
+}
+#footer #footer2{
+    background-color: #222222;
+    width: 100%;
+    height: 250px;
+}
+#footer #footer2 img{
+   
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    height: 250px;
+}
