@@ -87,6 +87,7 @@ body{
     
 }
 .content .sanpham .sanpham-detail .name-sampham a img{
+	margin-top: 25px;
     height: 30px;
     width: 30px;
 }

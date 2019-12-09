@@ -68,6 +68,7 @@
         <div class="content1">
         	<% 	
         	ArrayList<Product> listProduct = (ArrayList<Product>)request.getAttribute("products");
+        		if(listProduct==null) listProduct=ProductDAO.getAll();
         	//    ArrayList <Product> listProduct=ProductDAO.getAll(); 
         	
         		int hang=listProduct.size()/4;

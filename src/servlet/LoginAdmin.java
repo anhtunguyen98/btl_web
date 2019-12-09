@@ -44,12 +44,17 @@ public class LoginAdmin extends HttpServlet {
 		HttpSession session=request.getSession();
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
-		System.out.print(username+" "+password);
+		//System.out.print(username+" "+password);
 		UserAdmin admin=UserAdminDAO.getByUser(username, password);
-		System.out.print(admin.getId());
+		//System.out.print(admin.getId());
 		if(admin!=null) {
 			session.setAttribute("admin", admin);
+			session.setAttribute("messad",null);
 			request.getRequestDispatcher("AdminHome.jsp").forward(request, response);
+		}
+		else {
+			session.setAttribute("messad","sai tên đăng nhập hoặc mật khẩu");
+			response.sendRedirect("/BaiTapLon/LoginAdmin");
 		}
 		
 	}
