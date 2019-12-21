@@ -40,12 +40,18 @@
                     <input id="tel" type="text" name="tel" >
                 </div>
                 
-          
+          			<%String notice; %>
+                <%if(session.getAttribute("useraxis")!=null){
+                	notice=(String)session.getAttribute("useraxis");
+            		
+           		 }else notice="thành công"; %>
                 <div class="actions">
                 	 <button  class="button" type="submit">ĐĂNG KÝ</button>
                     
                     <a href="TrangChu" class="button cancel">HỦY</a>
                 </div>
+                	
+           		 <input id="notice" type="hidden" name="notice" value="<%=notice %>" >
             </div>
         </div>
     </div>
@@ -59,7 +65,7 @@
             let tel = document.getElementById('tel').value;
             let at = email.indexOf("@");
             let com= email.indexOf(".com");
-
+			let notice=document.getElementById('notice').value;
             let dk1 = password.indexOf("@");
             let dk2 = password.indexOf("#");
             let dk3 = password.indexOf("*");
@@ -68,7 +74,7 @@
             if(username !="" && password!="" && email!="" && tel!=""){
                 if(at!=-1 && com!=-1){
                     if(dk1!=-1 || dk2!=-1 || dk3!=-1 || dk4!=-1 || dk5!=-1){
-                        alert("Thành công");
+                        alert(notice);
                     }
                     else {
                     	alert("Pass phải có tối thiểu 1 trong các kí tự: @, #, *, &, !.");

@@ -46,7 +46,7 @@ public class Account extends HttpServlet {
 		HttpSession session=request.getSession();
 		User user=(User)session.getAttribute("user");
 		ArrayList<Bill> listbill=BillDAO.getByUserID(user.getId());
-		session.setAttribute("bills", listbill);
+		request.setAttribute("bills", listbill);
 		request.getRequestDispatcher("Account.jsp").forward(request, response);
 	}
 

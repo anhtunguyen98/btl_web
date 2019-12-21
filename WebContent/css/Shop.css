@@ -15,21 +15,21 @@ body{
 }
 .content1 .hang{
    
-    width: 1200px;
-    height: 300px;
+    width: 100%;
+/*     height: 300px; */
     /* border: 3px solid greenyellow; */
 }
 .content1 .hang ul{
     
     margin: 0px;
     padding: 0px;
-    height: 300px;
+/*     height: 300px; */
     margin-top: 7px;
 }
 .content1 .hang ul li{
     float: left;
     list-style: none;
-    height: 350px;
+/*     height: 350px; */
     width: 298px;
     /* border: 1px solid #FFFFFF; */
     border: 1px solid greenyellow;
@@ -63,6 +63,7 @@ body{
     margin-left: 80px;
 }
 .content1 .hang ul li a h3{
+	text-align: center;
     margin-left: 15px;
     font-family: "Helvetica,Arial,sans-serif", sans-serif;
     font-size: 15px;

@@ -30,7 +30,7 @@ if(admin==null){
                 <th>Thông Tin</th>
                 <th>Giá</th>
                 <th>Edit</th>
-                <th>Delete</th>
+            
             </tr>
 			
 			
@@ -43,10 +43,9 @@ if(admin==null){
                 <td><%=listProduct.get(i).getBaohanh() %></td>
                 <td><%=listProduct.get(i).getThongtin() %></td>
                 <td><%=listProduct.get(i).getGia() %> Đ</td>
-<%--                <td><a href="edit?code=<%= item.getCode() %>">Edit</a></td> --%>
-<%--                 <td><a href="delete?code=<%= item.getCode() %>">Delete</a></td> --%>
+
                 <td><a href="EditProduct?id=<%=listProduct.get(i).getId()%>">Edit</a></td>
-                <td><a href="DeleteProduct?id=<%=listProduct.get(i).getId()%>">Delete</a></td>
+                
             </tr>
             	
             	
@@ -56,7 +55,13 @@ if(admin==null){
         
         <a href="AddProduct">Add Product</a>
     </body>
-    <script >function quit() {
-        location.href="AdminHome";
-    }</script>
+    <script >
+	    function quit() {
+	        location.href="AdminHome";
+	    }
+	    
+	    function confirmDelete(){
+	    	confirm("Bạn có chắc muôn xóa sản phẩm này không?");
+	    }
+    </script>
 </html>

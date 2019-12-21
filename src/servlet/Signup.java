@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import models.DAO.UserDAO;;
 
@@ -29,12 +30,6 @@ public class Signup extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		String hoten=request.getParameter("name");
-//		String email=request.getParameter("email");
-//		String sdt=request.getParameter("tel");
-//		String user=request.getParameter("user");
-//		String pass=request.getParameter("pass");
-//		UserDAO.insert(hoten, email, sdt, user, pass);
 		request.getRequestDispatcher("Signup.jsp").forward(request, response);
 	
 	}
@@ -44,14 +39,24 @@ public class Signup extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//doGet(request, response);
+		HttpSession session=request.getSession();
 		request.setCharacterEncoding("utf-8");
 		String hoten=request.getParameter("name");
 		String email=request.getParameter("email");
 		String sdt=request.getParameter("tel");
 		String user=request.getParameter("user");
 		String pass=request.getParameter("pass");
-		UserDAO.insert( hoten, email, sdt, user, pass);
-		response.sendRedirect("/BaiTapLon/Login");
+		boolean check=UserDAO.check(user);
+		if(check==false) {
+			UserDAO.insert( hoten, email, sdt, user, pass);
+			response.sendRedirect("/BaiTapLon/Login");
+			session.setAttribute("useraxis",null);
+		}
+		else {
+			session.setAttribute("useraxis","tên đăng nhập đã tồn tại");
+			response.sendRedirect("/BaiTapLon/Signup");
+		}
+		
 		
 	}
 

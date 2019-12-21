@@ -44,7 +44,7 @@ if(admin==null){
 	
 	
 	 </table><br>
-	 <input type="submit" value="Update">
+	 <input type="submit" value="Update"  >
 	
 	
 	</form>

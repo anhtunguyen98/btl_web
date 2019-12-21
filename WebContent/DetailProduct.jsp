@@ -37,8 +37,8 @@
                <h1><%=product.getName() %>
                 </h1>
                 <h2><%=product.getGia() %> Đ</h2>
-                <h3> *<%=product.getPhukien() %><br>
-                    *<%=product.getBaohanh() %><br>
+                <h3> *Phụ Kiện:<%=product.getPhukien() %><br>
+                    *Bảo Hành:<%=product.getBaohanh() %><br>
                     *Thông số tóm tắt:</h3>
                 <p>
                    <%=product.getThongtin() %><br>

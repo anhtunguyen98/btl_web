@@ -11,18 +11,23 @@ import models.User;
 
 
 public class UserDAO {
-	public static ResultSet select(String sql) {
+	public static boolean check(String user) {
 		
 		Connection con=DBConnector.createConnection();
 		try {
-			Statement stm=con.createStatement();
-			ResultSet rs=stm.executeQuery(sql);
-			 return rs;
+			int count=0;
+			PreparedStatement ps=con.prepareStatement("select * from user where username=?");
+			ps.setString(1, user);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next()) {
+				count++;
+			}
+			if(count>0) return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return null;
+		return false;
 		
 	}
 	public static void insert(String hoten,String email,String sdt,String user,String pass) {

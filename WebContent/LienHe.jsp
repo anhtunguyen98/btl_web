@@ -33,11 +33,13 @@
 			</div>
 		</div>
 	</div>
+	<jsp:include page="footer.jsp" />
 </body>
 <style type="text/css">
 	#contact{
 		margin-top: 100px;
 		position: relative;
+		margin-bottom: 400px;
 	}
 	#contact #title{
 		color: blue;

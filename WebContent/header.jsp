@@ -25,9 +25,9 @@
             <div id="menu_top">
                 <ul>
                     <li><a href="TrangChu" title="Trang chủ"> Trang chủ </a></li>
-                    <li><a href="#" title="Giới thiệu"> Giới thiệu </a></li>
+                    <li><a href="GioiThieu.jsp" title="Giới thiệu"> Giới thiệu </a></li>
                     <li><a href="Shop" title="Cửa hàng"> Cửa hàng </a></li>
-                    <li><a href="#" title="Tin tức"> Tin tức </a></li>
+                    <li><a href="TinTuc.jsp" title="Tin tức"> Tin tức </a></li>
                     <li><a href="LienHe.jsp" title="Liên hệ"> Liên hệ </a></li>
                 </ul>
             </div>

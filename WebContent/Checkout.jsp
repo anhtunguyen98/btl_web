@@ -30,23 +30,23 @@
                                 <h3 class="customer-details-item-title">BILLING DETAILS</h3>
                                 <p class="form-row-narrow col-6">
                                     <label class="form-row-title">First name*</label>
-                                    <input type="text" class="first-name" name="first-name" required>
+                                    <input type="text" class="first-name" name="first-name" id="fistname" required>
                                 </p>
                                 <p class="form-row-narrow col-6">
                                     <label class="form-row-title last-name-title">Last name*</label>
-                                    <input type="text" class="last-name" name="last-name" required>
+                                    <input type="text" class="last-name" name="last-name" id="lastname" required>
                                 </p>
                                 <p class="form-row-wide">
                                     <label class="form-row-title">Street address*</label>
-                                    <input type="text" class="street-address" name="street-address" required>
+                                    <input type="text" class="street-address" name="street-address" id="street"required>
                                 </p>
                                 <p class="form-row-wide">
                                     <label class="form-row-title">Town/City*</label>
-                                    <input type="text" class="town-city" name="city" required>
+                                    <input type="text" class="town-city" name="city" id="city" required>
                                 </p>
                                 <p class="form-row-wide">
                                     <label class="form-row-title">Phone*</label>
-                                    <input type="text" class="phone" name="phone" required>
+                                    <input type="text" class="phone" name="phone" id="phone" required>
                                 </p>
                             </div>
                             <div class="col-6 add-information">
@@ -112,12 +112,27 @@
                            
                         </p>
                         <button type="submit" class="button-payment" name="woocommerce_checkout_place_order"
-                                id="place_order" value="Place order" data-value="Place order">Place order</button>
+                                id="place_order" value="Place order" data-value="Place order" onclick="myFunction()">Place order</button>
                     </div>
                 </form>
             </div>
         </div>
          <jsp:include page="footer.jsp"/>
     </body>
-
-</html>>
+	<script>
+        function myFunction() {9
+        	let fistname = document.getElementById('fistname').value;
+        	let lastname = document.getElementById('lastname').value;
+        	let street = document.getElementById('street').value;
+        	let city = document.getElementById('city').value;
+        	let phone = document.getElementById('phone').value;
+        	if(fistname!=""&&lastname!=""&&street!=""&&city!=""&&phone!=""){
+        		alert("Thành công");
+        	}
+        	else{
+        		alert("Vui lòng điền đầy đủ thông tin");	
+        	}
+            
+        }
+    </script>
+</html>

@@ -6,7 +6,7 @@
 <html>
 <head>
 <% User user=(User)session.getAttribute("user");
-	ArrayList<Bill> bills=(ArrayList<Bill>) session.getAttribute("bills");
+	ArrayList<Bill> bills=(ArrayList<Bill>) request.getAttribute("bills");
 %>
  <link rel="stylesheet" href="css/account.css"/>
 <title>Your Account</title>
